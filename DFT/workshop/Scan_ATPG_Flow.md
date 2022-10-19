@@ -354,7 +354,48 @@ write_flat_model <filename> -replace
 
 # Faults
 
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f8cb573fbc68428280f0305913482ee6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
 
+
+
+## TE(testable)
+
+### DI
+
+### DS
+
+### PT
+
+### AU
+
+- 产生的原因可能有：
+
+  - Constraints (约束阻止ATPG工具去产生一个pattern 检测fault);
+
+  - No-Scan elements；
+
+  - Black box
+
+### UD
+
+- 在test pattern生成之前，所有的testable fault 都被归类为 UC;
+  - 那些没有办法为特定的fault设置成需要的状态的fault location也会被标记为 UC;
+
+- 在 pattern生成之后， UC/UO fault 中的一部分会被标记为 AAB (ATPG Abort) ;
+  - 可以通过修改 abort limit 尝试解决AAB fault
+
+## UT(Un-testable)
+
+>   这里指的是根本就不能测试？这里可以理解成：
+>
+> - tie（也隐含block的）
+> - unused
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/50097b7c8eea40adbeb86678ae81144d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+## Fault Summary
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/0a440c995a5f44db9517d9d02a578163.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
 
 
 
