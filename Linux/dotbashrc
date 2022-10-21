@@ -1,0 +1,10 @@
+alias gita='git add'
+alias gits='git status'
+alias cdp='cd /c/Users/BES/Documents/Github'
+
+alias ntmux='tmux new -s'
+alias atmux='tmux a -t'
+alias rtmux='tmux rename-window'
+
+alias rm="mv --verbose -f --backup=numbered --target-directory /c/Users/BES/Downloads/.useless/" 
+
