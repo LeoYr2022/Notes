@@ -386,7 +386,7 @@ write_flat_model <filename> -replace
 
 ## UT(Un-testable)
 
->   这里指的是根本就不能测试？这里可以理解成：
+>   这里指的是根本就不能测试, 这里可以理解成：
 >
 > - tie（也隐含block的）
 > - unused
@@ -398,4 +398,62 @@ write_flat_model <filename> -replace
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0a440c995a5f44db9517d9d02a578163.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
 
 
+
+## Key Conceptions
+
+### test coverage
+
+$$ test\_coverage = \dfrac{DT+(PD*posedet\_credit)}{TE} $$
+
+>  需要关注AU/UD的原因，因为这些都是分母
+
+### fault coverage
+
+$$ fault\_coverage = \dfrac{DT+(PD*posedet\_credit)}{FU}$$
+
+> 分母的组成：
+>
+> - TE
+> - UT
+
+#### ATPG Effectiveness 
+
+- 反应工具的能力，也可以说是设计对工具的阻力
+
+$$ATPG\_Effectiveness = \dfrac{DT+UT+PU+AU+(PD*posedet\_credit)}{FU}$$
+
+#### Look around log
+
+```tcl
+tessent -shell -logfile <logfilename> -replace
+```
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20e7f2b9a74441f3a7db68bbb2ea813c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/21a83afc727743c5b3428d0a482a852a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/14761a073a0a4b3babb2fd587c6e1640.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/fea1f2463b6740b791909854bb8fd5d7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a55808d22c1f4281bd35daaad17ac5b0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![img](https://img-blog.csdnimg.cn/31576d4de7b54564aece7c7459dd6226.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+## Faults Models
+
+- Stuck-AT (占比最大)
+- N-Detect Bridge
+- Transition
+- Path Delay
+- UDFM/Cell-aware(user define fault [model](https://so.csdn.net/so/search?q=model&spm=1001.2101.3001.7020))
+- IDDQ(测静态电流的)
+- Toggle
+- Automotive-Grade(包含 cell-aware )（可以得到更好的测试质量）
+
+## Bridge Faults Models
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/bfdb177788974391895e72d972fbeab0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+## Multiple Detection
 
