@@ -1,0 +1,4 @@
+git clone https://github.com/xnng/bash.git
+cd bash
+cp tmux/bin/* /usr/bin
+cp tmux/share/* /usr/share -r
