@@ -1,14 +1,15 @@
 alias gita='git add'
 alias gits='git status'
-alias cdg='cd /c/Users/BES/Documents/Github'
+alias  cdg='cd /d/Github'
 
 alias ntmux='tmux new -s'
 alias atmux='tmux a -t'
 alias rtmux='tmux rename-window'
 
-alias rm="mv --verbose -f --backup=numbered --target-directory /c/Users/BES/Downloads/.useless/" 
+alias rm="mv --verbose -f --backup=numbered --target-directory /d/.useless/" 
+alias bc="/d/Program\ Files/Beyond\ Compare\ 3/BCompare.exe"
 
 ## Projects Dir
-alias     cdp='cd /c/Users/BES/OneDrive/Work@BES/'
-alias set1700='cd /c/Users/BES/OneDrive/Work@BES/BES1700'
+alias     cdp='cd /d/OneDrive/Work@BES/'
+alias set1700='cd /d/OneDrive/Work@BES/BES1700'
 
