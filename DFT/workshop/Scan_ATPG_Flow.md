@@ -457,3 +457,39 @@ tessent -shell -logfile <logfilename> -replace
 
 ## Multiple Detection
 
+> 为什么要对一个site做多次的detect？
+>
+> - 可以提高检测到bridge问题（bridge问题有点像coupling）
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/639dc87caeea4440ae270268ff2ff163.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+```tcl
+## N-detect Method1: increase patterns
+set_multiple_detection -guaranteed_atpg_detections <N>
+```
+
+```tcl
+## N-detect Method2: does not increase patterns, but increase run time
+## Embedded Multi-detect(EMD)
+set_multiple_detection -desired_atpg_detections <N>
+```
+
+## At-speed fault mode
+
+> transition faults场景比path delay faults要广
+
+### At-speed Fault model: transition
+
+- slow to rise node
+- slow to fall node
+- 至少需要两个cycle
+
+### At-speed Fault model: path delay
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/1ec66faea51c4fad84ecc647583035e3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2Nlbmlj,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+- slow to rise path
+- slow to fall path
+
+## UDFM(User defined fault model)
+
