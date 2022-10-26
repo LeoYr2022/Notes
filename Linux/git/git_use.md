@@ -3,6 +3,11 @@
   ```tcl
   git config --global core.autocrlf true
   ```
+- Solve Chinease Charatores
+
+  ```tcl
+  git config --global core.quotepath false
+  ```
 
   
 
