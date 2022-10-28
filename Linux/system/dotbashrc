@@ -9,8 +9,9 @@ alias atmux='tmux a -t'
 alias rtmux='tmux rename-window'
 
 ## Tools
-alias   bc="/d/Program\ Files/Beyond\ Compare\ 4/BCompare.exe"
-alias tree="/d/Program\ Files/Git/bin/tree.exe"
+alias     bc="/d/Program\ Files/Beyond\ Compare\ 4/BCompare.exe"
+alias   tree="/d/Program\ Files/Git/bin/tree.exe"
+alias typora="/d/Program\ Files/Typora/Typora.exe"
 
 ## Projects Dir
 alias     cdp='cd /d/OneDrive/Work@BES/'
