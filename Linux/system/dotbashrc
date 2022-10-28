@@ -15,6 +15,7 @@ alias typora="/d/Program\ Files/Typora/Typora.exe"
 
 ## Projects Dir
 alias     cdp='cd /d/OneDrive/Work@BES/'
+alias   guide='cd /d/OneDrive/000-UserGuide'
 alias set1700='cd /d/OneDrive/Work@BES/BES1700'
 
 ## Alias
