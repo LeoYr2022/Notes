@@ -12,7 +12,7 @@ alias rtmux='tmux rename-window'
 alias     bc="/d/Program\ Files/Beyond\ Compare\ 4/BCompare.exe"
 alias   tree="/d/Program\ Files/Git/bin/tree.exe"
 alias typora="/d/Program\ Files/Typora/Typora.exe"
-alias    pdf="/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe"
+alias evince="/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe"
 
 ## Projects Dir
 alias     cdp='cd /d/OneDrive/Work@BES/'
