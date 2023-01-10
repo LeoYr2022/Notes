@@ -1,0 +1,2 @@
+# 关闭linux的声音
+setterm -blength n
